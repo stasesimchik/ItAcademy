@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Words</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var text = prompt('введите произвольный текст');
+    var arr = text.split(' ');
+
+    var newArr = arr.sort(longest);
+
+    alert( newArr[0] + '; ' + newArr[1] + '; ' + newArr[2]);
+
+    function longest(a, b) {
+      if (a.length > b.length) {
+        return -1;
+      }
+      if (a.length < b.length) {
+        return 1;
+      }
+      return 0;
+    }
+  </script>
+</body>
+</html>

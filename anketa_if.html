@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AnketaIf</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var surname = prompt('Введите вашу фамилию');
+    var name = prompt('Введите ваше имя');
+    var patronymic = prompt('Введите вашу отчество');
+    var age = +prompt('Ваш возраст');
+    var days = age * 365;
+    var sex = confirm("Ваш пол - мужской?");
+    if(sex){
+      var sex = "Мужской";
+      if (age>=63) { var pensionAge = 'да'} else { var pensionAge = 'нет'};
+    } else {
+      var sex = "Женский";
+    if(age>=58) { var pensionAge = 'да'} else { var pensionAge = 'нет'};}
+
+    alert('ФИО:'+ ' ' + surname + ' '+ name + ' ' + patronymic + "\n" + 'Возраст, лет:' + ' ' +  age + "\n" + 'Возраст, дней:' + ' ' + days + "\n" + 'Пол:' + ' ' + sex + "\n" + 'Пенсионный возраст:' + ' ' + pensionAge );
+
+  </script>
+</body>
+</html>
